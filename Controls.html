@@ -217,6 +217,68 @@
 
                                 </div>
                             </div>
+                            <!-- MODEL REFERENCE ADAPTIVE CONTROL - DC MOTOR -->
+                            <div class="col s12 m6 l4">
+                                <div class="card medium">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                                <div class="slideshow-container" data-cycle="2000"> <!-- Every 2 seconds photo is changing-->
+                                                    <div class="mySlides fade">
+                                                        <img src="static/img/Projects/Controls/MRAC_DCMotor/Trajectories.gif" style="width:400px;height:240px;border:0; text-align: center" class="activator">
+                                                    </div>
+                                                </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator teal-text hoverline">Model Reference Adaptive Control
+                                            <i class="mdi-navigation-more-vert right"></i>
+                                        </span>
+                                        <p>Designed a model reference adaptive controller (MRAC) for a DC motor drive.</p>
+                                    </div>
+                                    <div class="card-reveal">
+                                            <h2 class="card-title brown-text" style="font-family:Comic sans MS; font-size: 60px; text-align:center;">Check out more </h2>
+                                            <h2 class="card-title brown-text" style="font-size: 60px; text-align:center;"> &dArr; </h2>
+                                        <div class="card-action">
+                                            <a aria-label="More Details regarding Project" href="#MRAC_DCMotor"
+                                                data-position="top" data-tooltip="Details" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                                <i class="fa fa-external-link"></i>
+                                            </a>
+                                            <a aria-label="Visit the GitHub repo for Project Contribution" href="https://github.com/JapSethi/Adaptive-Controls-Project-Part-1" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- APPLIED lINEAR CONTROLS -->
+                            <div class="col s12 m6 l4">
+                                <div class="card medium">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                                <div class="slideshow-container" data-cycle="2000"> <!-- Every 2 seconds photo is changing-->
+                                                    <div class="mySlides fade">
+                                                        <img src="static/img/Projects/Controls/Adaptive%20Controls/auv_animate1.gif" style="width:400px;height:350px;border:0; text-align: center" class="activator">
+                                                    </div>
+                                                </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator teal-text hoverline">System ID & Output Feedback
+                                            <i class="mdi-navigation-more-vert right"></i>
+                                        </span>
+                                        <p>Developed and validated an an output feedback controller & an empirical discrete-time state-space model of the dynamic system.</p>
+                                    </div>
+                                    <div class="card-reveal">
+                                            <h2 class="card-title brown-text" style="font-family:Comic sans MS; font-size: 60px; text-align:center;">Check out more </h2>
+                                            <h2 class="card-title brown-text" style="font-size: 60px; text-align:center;"> &dArr; </h2>
+                                        <div class="card-action">
+                                            <a aria-label="More Details regarding Project" href="#ALC"
+                                                data-position="top" data-tooltip="Details" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                                <i class="fa fa-external-link"></i>
+                                            </a>
+                                            <a aria-label="Visit the GitHub repo for Project Contribution" href="https://github.com/JapSethi/Applied-Linear-Controls-Project-Part-1" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <!-- INVERTED PENDULUM ON CART -->
                             <div class="col s12 m6 l4">
                                 <div class="card medium">
@@ -402,6 +464,116 @@
           </div>
         </div>
 
+                <!-- MODEL REFERENCE ADAPTIVE CONTROL - DC MOTOR -->
+        <div id="MRAC_DCMotor" class="modal-window">
+          <div>
+            <a href="#modal-close" title="Close" class="modal-close">EXIT&times;</a>
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                      <h1 style="color:teal; text-align:center;  line-height: 20px">Model Reference Adaptive Control (MRAC)</h1>
+                      <hr>
+                    </div>
+                    <!-- Automatic Slideshow -->
+                      <div class="slideshow-container" data-cycle="2000" > <!-- Every 2 seconds photo is changing-->
+                          <div class="mySlides fade">
+                              <img src="static/img/Projects/Controls/MRAC_DCMotor/AllGraphsin2by2_WithProjection.jpg" style="width:480px;height:240px;border:0;" >
+                          </div>
+                          <div class="mySlides fade">
+                              <img src="static/img/Projects/Controls/MRAC_DCMotor/ReducedFirstOrderGraphs.jpg" style="width:480px;height:240px;border:0;" >
+                          </div>
+                          <div class="mySlides fade">
+                              <img src="static/img/Projects/Controls/MRAC_DCMotor/ConvexF_NormVel_1by2.jpg" style="width:450px;height:240px;border:0;" >
+                          </div>
+                      </div>
+                    <p>
+                    Designed a model reference adaptive controller for a DC motor drive, so that the approximate velocity tracking may be achieved without knowledge of motor, or load.
+                    </p>
+                    <h6>Role</h6>
+                    <ul>
+                        <li>Designed an adaptive controller for the reduced first order and full second order state feedback system.</li>
+                        <li>Designed and applied appropriate Projection algorithm with aboundary layer to the controller.</li>
+                        <li>Analyzed the lyapunov function stability of the adaptive controller.</li>
+                        <li>Designed an adaptive controller for Full output feedback system.</li>
+                    </ul>
+                    <h6>Languages Used</h6>
+                    <ul>
+                        <li>Matlab</li>
+                        <li>Simulink</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- APPLIED LINEAR CONTROLS -->
+        <div id="ALC" class="modal-window">
+          <div>
+            <a href="#modal-close" title="Close" class="modal-close">EXIT&times;</a>
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                      <h1 style="color:teal; text-align:center;  line-height: 20px">System ID & Output Feedback</h1>
+                      <hr>
+                    </div>
+                    <!-- Automatic Slideshow -->
+                      <div class="slideshow-container" data-cycle="2000" > <!-- Every 2 seconds photo is changing-->
+                          <div class="mySlides fade">
+                              <img src="static/img/Projects/Controls/AppliedLinearControl/RandomInputExcitation_Midterm.jpg" style="width:480px;height:240px;border:0;" >
+                          </div>
+                          <div class="mySlides fade">
+                              <img src="static/img/Projects/Controls/AppliedLinearControl/TimedomainFreqDomainPlotResponseAndNoise_Midterm.jpg" style="width:480px;height:240px;border:0;" >
+                          </div>
+                          <div class="mySlides fade">
+                              <img src="static/img/Projects/Controls/AppliedLinearControl/HankelPlot_Midterm.jpg" style="width:480px;height:240px;border:0;" >
+                          </div>
+                          <div class="mySlides fade">
+                              <img src="static/img/Projects/Controls/AppliedLinearControl/FinalComparison_Midterm.jpg" style="width:480px;height:240px;border:0;" >
+                          </div>
+                          <div class="mySlides fade">
+                              <img src="static/img/Projects/Controls/AppliedLinearControl/SimulatedActualSamePuleInput_Final.jpg" style="width:480px;height:240px;border:0;" >
+                          </div>
+                          <div class="mySlides fade">
+                              <img src="static/img/Projects/Controls/AppliedLinearControl/ClosedLoopLqrResponse_Final.jpg" style="width:480px;height:240px;border:0;" >
+                          </div>
+                          <div class="mySlides fade">
+                              <img src="static/img/Projects/Controls/AppliedLinearControl/Outputfeedbackresponse_Final.jpg" style="width:480px;height:240px;border:0;" >
+                          </div>
+                      </div>
+                    <p>
+                    Developed and validated an output feedback controller & empirical discrete-time state-space model of the dynamic system.
+                    </p>
+                    <h6>Role</h6>
+                    <style>
+                    code {
+                      background-color: #D3D3D3;
+                      color: #000000;
+                      border-radius: 0.1em;
+                      padding: 1px 1px 1px;
+                      white-space: nowrap;
+                    }
+                    </style>
+                    <ul>
+                        <li>Applied H1 estimate technique to estimate the frequency response function and estimated coherence of each path</li>
+                        <li>Estimated Discrete time transfer functions for each path using <code> invfreqz()</code>function and converted it into minimum realization using <code>minreal()</code> function</li>
+                        <li>Generated a Balanced Realization using <code>balreal()</code> and plotted the Hankel singular values to help generate a reduced order LTI discrete time state space model using <code>modred()</code></li>
+                        <li>Generated z-domain grid to plot the z-domain eigen values (poles) for each path using <code>zgrid()</code> function.</li>
+                        <li>Tested the Discrete State-Space Model for controllability and observability using <code>ctrb()</code> and <code>obsv()</code> functions</li>
+                        <li>Designed an LQR state feedback controller using <code>lqr()</code> function to generate a closed-loop time response</li>
+                        <li>Estimated the state vector by designing the appropriate Kalman state feedback gain using <code>kalman()</code> function</li>
+                        <li>Constructed the discrete-time state space output feedback controller LTI object and generated the closed loop response</li>
+                    </ul>
+                    <h6>Languages Used</h6>
+                    <ul>
+                        <li>Matlab</li>
+                        <li>Simulink</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
 
                         <!-- INVERTED PENDULUM ON A CART -->
         <div id="IP" class="modal-window">
